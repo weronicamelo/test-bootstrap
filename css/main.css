@@ -25,7 +25,6 @@ a {
 }
 
 /* HEADER */
-
 .header {
     color: var(--texto-default);
     background: var(--background-color);
@@ -61,7 +60,6 @@ a {
   margin: 0 5px 0 30px;
   border-radius: 4px;
 }
-
 
 /* Nav menu Desktop = Responsivo */
 @media (min-width:1200px) {
@@ -376,4 +374,24 @@ a {
     .hero .carousel {
         min-height: 100vh;
     }
+}
+
+.featured-services .service-item {
+  background: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-services .service-item .icon {
+  margin-bottom: 10px;
+}
+
+.featured-services .service-item .icon i {
+  color: #3fbbc0;
+  font-size:  36px;
+  transition: ease-in-out 0.3s;
 }
