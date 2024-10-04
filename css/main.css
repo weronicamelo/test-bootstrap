@@ -12,6 +12,7 @@
     --nav-bg-topbar: #3fbbc0;
     --nav-color2: #ebebeb;
     --surface: #ebebeb;
+    --accent-color: #3fbbc0;
 }
 
 body {
@@ -394,4 +395,131 @@ a {
   color: #3fbbc0;
   font-size:  36px;
   transition: ease-in-out 0.3s;
+}
+
+.featured-services .service-item .icon h4 {
+  font-weight: 700;
+  font-size:  20px;
+  margin-bottom: 15px;
+}
+
+.featured-services .service-item h4 a {
+  color: #444;
+}
+
+.featured-services .service-item p {
+  line-height: 24px;
+  margin-bottom: 14px;
+  margin-bottom: 0;
+}
+
+.featured-services .service-item:hover h4 a,
+.featured-services .service-item:hover .icon i,
+.featured-services .service-item:hover p {
+  color: whitesmoke;
+}
+
+.featured-services .service-item:hover:before {
+  background: #3fbbc0;
+  inset: 0;
+  border-radius: 0px;
+}
+
+.featured-services .service-item:before {
+  content: "";
+  position: absolute;
+  background: #363636;
+  inset: 100% 0 0 0;
+  transition: all 0.3s;
+  z-index: -1;
+  inset: 100% 0 0 0;
+}
+
+section, .section {
+  color: #444;
+  background: var(--background-color);
+  padding: 60px 0;
+}
+
+@media (max-width: 1199px) {
+  .section,
+  .section {
+    scroll-margin-top: 100px;
+  }
+}
+
+.accent-background {
+  background: #3fbbc0;
+  color: #e0e0e0;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.sobre .content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2293a0;
+}
+
+.sobre .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sobre .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+
+.sobre .content ul i {
+  color: #00b0c4;
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  padding: 10px 0 0 0;
+  font-size: 1.25rem;
+}
+
+.sobre .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
